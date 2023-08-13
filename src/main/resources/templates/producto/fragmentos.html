@@ -47,7 +47,7 @@
                             <div class="modal-body">
                                 <div class="mb-3">
                                     <label for="categoria.idCategoria">[[#{producto.categoria}]]</label>
-                                    <select name="idCategoria" 
+                                    <select name="categoria" --cambio para que se pueda incluir, anteriormente era "idCategoria"
                                             class="form-select" 
                                             aria-label="Default select example">
                                         <option th:each="c : ${categorias}" th:value="${c.idCategoria}" th:text="${c.descripcion}">
